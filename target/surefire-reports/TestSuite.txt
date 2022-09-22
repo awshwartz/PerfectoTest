@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 4, Errors: 0, Skipped: 4, Time elapsed: 0.406 s <<< FAILURE! - in TestSuite
+com.perfecto.sampleproject.PerfectoAppium.appiumTest  Time elapsed: 0.007 s  <<< FAILURE!
+java.lang.Exception: Please replace <<cloud name>> with your perfecto cloud name (e.g. demo) or pass it as maven properties: -DcloudName=<<cloud name>>
+	at com.perfecto.sampleproject.PerfectoAppium.appiumTest(PerfectoAppium.java:34)
+
+com.perfecto.sampleproject.PerfectoSelenium.androidTest  Time elapsed: 0.011 s  <<< FAILURE!
+java.lang.Exception: Please replace <<security token>> with your perfecto security token or pass it as maven properties: -DsecurityToken=<<SECURITY TOKEN>>
+	at com.perfecto.sampleproject.PerfectoSelenium.androidTest(PerfectoSelenium.java:39)
+
+com.perfecto.sampleproject.PerfectoSelenium.afterMethod[[TestResult name=androidTest status=FAILURE method=PerfectoSelenium.androidTest()[pri:0, instance:com.perfecto.sampleproject.PerfectoSelenium@15b204a1] output={null}]](0)  Time elapsed: 0.014 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.perfecto.reportium.client.ReportiumClient.testStop(com.perfecto.reportium.test.result.TestResult)" because "this.reportiumClient" is null
+	at com.perfecto.sampleproject.PerfectoSelenium.afterMethod(PerfectoSelenium.java:128)
+
+com.perfecto.sampleproject.PerfectoAppium.afterMethod[[TestResult name=appiumTest status=FAILURE method=PerfectoAppium.appiumTest()[pri:0, instance:com.perfecto.sampleproject.PerfectoAppium@43ee72e6] output={null}]](0)  Time elapsed: 0.014 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.perfecto.reportium.client.ReportiumClient.testStop(com.perfecto.reportium.test.result.TestResult)" because "this.reportiumClient" is null
+	at com.perfecto.sampleproject.PerfectoAppium.afterMethod(PerfectoAppium.java:98)
+

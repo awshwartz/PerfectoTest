@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test name="PerfectoAppium">
+    <classes>
+      <class name="com.perfecto.sampleproject.PerfectoAppium"/>
+    </classes>
+  </test> <!-- PerfectoAppium -->
+  <test name="PerfectoSelenium">
+    <classes>
+      <class name="com.perfecto.sampleproject.PerfectoSelenium"/>
+    </classes>
+  </test> <!-- PerfectoSelenium -->
+  <test parallel="tests" name="PerfectoAppium(failed)">
+    <classes>
+      <class name="com.perfecto.sampleproject.PerfectoSelenium">
+        <methods>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.perfecto.sampleproject.PerfectoSelenium -->
+      <class name="com.perfecto.sampleproject.PerfectoAppium">
+        <methods>
+          <include name="appiumTest"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.perfecto.sampleproject.PerfectoAppium -->
+    </classes>
+  </test> <!-- PerfectoAppium(failed) -->
+  <test parallel="tests" name="PerfectoSelenium(failed)">
+    <classes>
+      <class name="com.perfecto.sampleproject.PerfectoSelenium">
+        <methods>
+          <include name="iOSTest"/>
+          <include name="webTest"/>
+          <include name="androidTest"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.perfecto.sampleproject.PerfectoSelenium -->
+      <class name="com.perfecto.sampleproject.PerfectoAppium">
+        <methods>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.perfecto.sampleproject.PerfectoAppium -->
+    </classes>
+  </test> <!-- PerfectoSelenium(failed) -->
+</suite> <!-- Failed suite [Suite] -->
