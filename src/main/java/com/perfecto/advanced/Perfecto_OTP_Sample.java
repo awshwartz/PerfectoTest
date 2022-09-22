@@ -28,7 +28,7 @@ public class Perfecto_OTP_Sample {
 	RemoteWebDriver driver2;
 	ReportiumClient reportiumClient;
 	ReportiumClient reportiumClient2;
-	@Test
+/*	@Test
 	public void appiumAppTest() throws Exception {
 		//Replace <<cloud name>> with your perfecto cloud name (e.g. demo) or pass it as maven properties: -DcloudName=<<cloud name>>  
 		String cloudName = "<<cloud name>>";
@@ -117,7 +117,7 @@ public class Perfecto_OTP_Sample {
 		driver2.quit();
 
 	}
-
+*/
 
 
 }

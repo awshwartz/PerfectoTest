@@ -26,7 +26,7 @@ public class PerfectoAppiumiOSTurnOffWifi {
 	RemoteWebDriver driver;
 	ReportiumClient reportiumClient;
 
-	@Test
+/*	@Test
 	public void appiumTest() throws Exception {
 		//Replace <<cloud name>> with your perfecto cloud name (e.g. demo) or pass it as maven properties: -DcloudName=<<cloud name>>  
 		String cloudName = "<<cloud name>>";
@@ -83,7 +83,7 @@ public class PerfectoAppiumiOSTurnOffWifi {
 		System.out.println(reportURL);
 	}
 
-
+*/
 
 }
 

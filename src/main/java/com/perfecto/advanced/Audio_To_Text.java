@@ -29,7 +29,7 @@ public class Audio_To_Text {
 	ReportiumClient reportiumClient;
 	
 	// MAKE SURE TO HAVE Audio validation and transcription commands license to run this successfully. Contact Support for more info.
-
+/*
 	@Test
 	public void appiumTest() throws Exception {
 		// Replace <<cloud name>> with your perfecto cloud name (e.g. demo) or pass it
@@ -88,5 +88,5 @@ public class Audio_To_Text {
 		String reportURL = reportiumClient.getReportUrl();
 		System.out.println(reportURL);
 	}
-
+*/
 }
