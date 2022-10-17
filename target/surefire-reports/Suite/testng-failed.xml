@@ -1,46 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
-  <test name="PerfectoAppium">
+  <test name="DHS Mobile Test">
     <classes>
-      <class name="com.perfecto.sampleproject.PerfectoAppium"/>
+      <class name="DHS.dhsHomeTest"/>
     </classes>
-  </test> <!-- PerfectoAppium -->
-  <test name="PerfectoSelenium">
+  </test> <!-- DHS Mobile Test -->
+  <test name="DHS Web Test">
     <classes>
-      <class name="com.perfecto.sampleproject.PerfectoSelenium"/>
+      <class name="DHS.DHSWebTest"/>
     </classes>
-  </test> <!-- PerfectoSelenium -->
-  <test parallel="tests" name="PerfectoAppium(failed)">
+  </test> <!-- DHS Web Test -->
+  <test parallel="tests" name="DHS Mobile Test(failed)">
     <classes>
-      <class name="com.perfecto.sampleproject.PerfectoSelenium">
+      <class name="DHS.dhsHomeTest">
         <methods>
           <include name="afterMethod"/>
+          <include name="DHSHomeTestiOS"/>
+          <include name="DHSHomeTestAndroid"/>
         </methods>
-      </class> <!-- com.perfecto.sampleproject.PerfectoSelenium -->
-      <class name="com.perfecto.sampleproject.PerfectoAppium">
+      </class> <!-- DHS.dhsHomeTest -->
+      <class name="DHS.DHSWebTest">
         <methods>
-          <include name="appiumTest"/>
-          <include name="afterMethod"/>
+          <include name="afterClass"/>
         </methods>
-      </class> <!-- com.perfecto.sampleproject.PerfectoAppium -->
+      </class> <!-- DHS.DHSWebTest -->
     </classes>
-  </test> <!-- PerfectoAppium(failed) -->
-  <test parallel="tests" name="PerfectoSelenium(failed)">
-    <classes>
-      <class name="com.perfecto.sampleproject.PerfectoSelenium">
-        <methods>
-          <include name="iOSTest"/>
-          <include name="webTest"/>
-          <include name="androidTest"/>
-          <include name="afterMethod"/>
-        </methods>
-      </class> <!-- com.perfecto.sampleproject.PerfectoSelenium -->
-      <class name="com.perfecto.sampleproject.PerfectoAppium">
-        <methods>
-          <include name="afterMethod"/>
-        </methods>
-      </class> <!-- com.perfecto.sampleproject.PerfectoAppium -->
-    </classes>
-  </test> <!-- PerfectoSelenium(failed) -->
+  </test> <!-- DHS Mobile Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

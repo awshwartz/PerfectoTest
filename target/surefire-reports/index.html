@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\12037\OneDrive\Documents\PerfectoJavaSample-master\PerfectoJavaSample-master\testng_perfecto.xml</span>
+                    <span>C:\Users\12037\OneDrive\Documents\PerfectoJavaSample-master\Perfecto Test\src\test\resources\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 2 failed,  2 skipped,  </span>
+                    <span class="method-stats">3 methods, 1 failed,  1 skipped,  1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,12 +102,7 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.perfecto.sampleproject.PerfectoSelenium" class="method navigator-link" hash-for-method="androidTest">androidTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.perfecto.sampleproject.PerfectoAppium" class="method navigator-link" hash-for-method="appiumTest">appiumTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="DHS.dhsHomeTest" class="method navigator-link" hash-for-method="DHSHomeTestAndroid">DHSHomeTestAndroid</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -121,15 +116,24 @@
                     <div class="method-list-content skipped suite-Suite">
                       <span>
                         <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.perfecto.sampleproject.PerfectoSelenium" class="method navigator-link" hash-for-method="iOSTest">iOSTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.perfecto.sampleproject.PerfectoSelenium" class="method navigator-link" hash-for-method="webTest">webTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="DHS.dhsHomeTest" class="method navigator-link" hash-for-method="DHSHomeTestiOS">DHSHomeTestiOS</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content skipped suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="DHS.DHSWebTest" class="method navigator-link" hash-for-method="homepageTest">homepageTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -144,46 +148,46 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.perfecto.sampleproject.PerfectoSelenium</span>
+              <span class="class-name">DHS.dhsHomeTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="androidTest">
-                  </a> <!-- androidTest -->
-                  <span class="method-name">androidTest</span>
-                  <div class="stack-trace">java.lang.Exception: Please replace &lt;&lt;security token&gt;&gt; with your perfecto security token or pass it as maven properties: -DsecurityToken=&lt;&lt;SECURITY TOKEN&gt;&gt;
-	at com.perfecto.sampleproject.PerfectoLabUtils.fetchSecurityToken(PerfectoLabUtils.java:80)
-	at com.perfecto.sampleproject.PerfectoSelenium.androidTest(PerfectoSelenium.java:39)
+                  <a name="DHSHomeTestAndroid">
+                  </a> <!-- DHSHomeTestAndroid -->
+                  <span class="method-name">DHSHomeTestAndroid</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: EE-500-0001 - Max number of sessions reached. To add auto wait timeout of up to 54000000000 minutes, use the &quot;&apos;waitForAvailableLicense&apos;: true&quot; capability (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.03 seconds
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-D47G269&apos;, ip: &apos;192.168.1.242&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$errorHandler$0(JsonWireProtocolResponse.java:54)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
+	at DHS.dhsHomeTest.DHSHomeTestAndroid(dhsHomeTest.java:138)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 16 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.perfecto.sampleproject.PerfectoAppium</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="appiumTest">
-                  </a> <!-- appiumTest -->
-                  <span class="method-name">appiumTest</span>
-                  <div class="stack-trace">java.lang.Exception: Please replace &lt;&lt;cloud name&gt;&gt; with your perfecto cloud name (e.g. demo) or pass it as maven properties: -DcloudName=&lt;&lt;cloud name&gt;&gt;
-	at com.perfecto.sampleproject.PerfectoLabUtils.fetchCloudName(PerfectoLabUtils.java:64)
-	at com.perfecto.sampleproject.PerfectoAppium.appiumTest(PerfectoAppium.java:34)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 16 stack frames
+... Removed 21 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -192,45 +196,53 @@
           <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
               <img src="skipped.png"/>
-              <span class="class-name">com.perfecto.sampleproject.PerfectoSelenium</span>
+              <span class="class-name">DHS.dhsHomeTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="iOSTest">
-                  </a> <!-- iOSTest -->
-                  <span class="method-name">iOSTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="webTest">
-                  </a> <!-- webTest -->
-                  <span class="method-name">webTest</span>
+                  <a name="DHSHomeTestiOS">
+                  </a> <!-- DHSHomeTestiOS -->
+                  <span class="method-name">DHSHomeTestiOS</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">DHS.DHSWebTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="homepageTest">
+                  </a> <!-- homepageTest -->
+                  <span class="method-name">homepageTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\12037\OneDrive\Documents\PerfectoJavaSample-master\PerfectoJavaSample-master\testng_perfecto.xml</span>
+            <span class="header-content">C:\Users\12037\OneDrive\Documents\PerfectoJavaSample-master\Perfecto Test\src\test\resources\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite parallel=&quot;tests&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
-  &lt;test name=&quot;PerfectoAppium&quot;&gt;
+  &lt;test name=&quot;DHS Mobile Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.perfecto.sampleproject.PerfectoAppium&quot;/&gt;
+      &lt;class name=&quot;DHS.dhsHomeTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- PerfectoAppium --&gt;
-  &lt;test name=&quot;PerfectoSelenium&quot;&gt;
+  &lt;/test&gt; &lt;!-- DHS Mobile Test --&gt;
+  &lt;test name=&quot;DHS Web Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.perfecto.sampleproject.PerfectoSelenium&quot;/&gt;
+      &lt;class name=&quot;DHS.DHSWebTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- PerfectoSelenium --&gt;
+  &lt;/test&gt; &lt;!-- DHS Web Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -242,10 +254,10 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">PerfectoAppium (1 class)</span>
+                <span class="test-name">DHS Mobile Test (1 class)</span>
               </li>
               <li>
-                <span class="test-name">PerfectoSelenium (1 class)</span>
+                <span class="test-name">DHS Web Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -271,28 +283,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'androidTest')
-data.setCell(0, 2, 'com.perfecto.sampleproject.PerfectoSelenium')
-data.setCell(0, 3, 10);
+data.setCell(0, 1, 'homepageTest')
+data.setCell(0, 2, 'DHS.DHSWebTest')
+data.setCell(0, 3, 28813);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'appiumTest')
-data.setCell(1, 2, 'com.perfecto.sampleproject.PerfectoAppium')
-data.setCell(1, 3, 5);
+data.setCell(1, 1, 'DHSHomeTestAndroid')
+data.setCell(1, 2, 'DHS.dhsHomeTest')
+data.setCell(1, 3, 2282);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'webTest')
-data.setCell(2, 2, 'com.perfecto.sampleproject.PerfectoSelenium')
+data.setCell(2, 1, 'DHSHomeTestiOS')
+data.setCell(2, 2, 'DHS.dhsHomeTest')
 data.setCell(2, 3, 0);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'iOSTest')
-data.setCell(3, 2, 'com.perfecto.sampleproject.PerfectoSelenium')
-data.setCell(3, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 15 ms</span>
+              <span class="suite-total-time">Total running time: 31 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -318,45 +326,37 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.perfecto.sampleproject.PerfectoSelenium</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">DHS.DHSWebTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">androidTest</span>
+                <span class="method-name">homepageTest</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.perfecto.sampleproject.PerfectoAppium</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">DHS.dhsHomeTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">appiumTest</span>
+                <span class="method-name">DHSHomeTestAndroid</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">afterMethod([TestResult name=appiumTest status=FAILURE method=PerfectoAppium.appiumTest()[pri:0, instance:com.pe...)</span>
-                <span class="method-start">7 ms</span>
+                <span class="method-name">afterMethod([TestResult name=DHSHomeTestAndroid status=FAILURE method=dhsHomeTest.DHSHomeTestAndroid()[pri:0, in...)</span>
+                <span class="method-start">2285 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">DHSHomeTestiOS</span>
+                <span class="method-start">2298 ms</span>
+              </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.perfecto.sampleproject.PerfectoSelenium</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">afterMethod([TestResult name=androidTest status=FAILURE method=PerfectoSelenium.androidTest()[pri:0, instance:co...)</span>
-                <span class="method-start">12 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">iOSTest</span>
-                <span class="method-start">15 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">webTest</span>
-                <span class="method-start">15 ms</span>
-              </div> <!-- test-method -->
+              <div class="chronological-class-name">DHS.DHSWebTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">28813 ms</span>
+              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
