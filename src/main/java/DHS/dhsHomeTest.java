@@ -29,15 +29,7 @@ public class dhsHomeTest extends CommonMethods {
     public void DHSHomeTestiOS() throws Exception{
         String browserName = "safari";
         DesiredCapabilities capabilities = new DesiredCapabilities(browserName, "", Platform.ANY);
-        capabilities.setCapability("platformName", "iOS");
-        capabilities.setCapability("platformVersion", "15.0");
-        capabilities.setCapability("platformBuild", "19A341");
-        capabilities.setCapability("location", "NA-US-BOS");
-        capabilities.setCapability("resolution", "1170x2532");
-        capabilities.setCapability("accountName", "dev1");
-        capabilities.setCapability("deviceStatus", "CONNECTED");
-        capabilities.setCapability("manufacturer", "Apple");
-        capabilities.setCapability("model", "iPhone-13");
+        capabilities.setCapability("deviceName", "00008030-001128C00C8B802E");
 
         // The below capability is mandatory. Please do not replace it.
         capabilities.setCapability("securityToken", PerfectoLabUtils.fetchSecurityToken(securityToken));
